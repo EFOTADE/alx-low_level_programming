@@ -6,7 +6,8 @@
  */
 int main(void) 
 {
-  int a, b;
+  int a;
+  int b;
   for (a=0; a<10; a++)
   {
       for (b=a; b<10; b++)
@@ -17,7 +18,6 @@ int main(void)
           }
           else
           {
-		  //do nothing
           }
 	}
   }

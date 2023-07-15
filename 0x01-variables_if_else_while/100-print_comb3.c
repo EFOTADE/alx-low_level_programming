@@ -17,7 +17,7 @@ int main(void)
           }
           else
           {
-              printf("", a,b);
+		  //do nothing
           }
 	}
   }

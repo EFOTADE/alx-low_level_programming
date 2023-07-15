@@ -12,10 +12,17 @@ int main(void)
   {
       for (b=a; b<10; b++)
       {
-          if (a!=b)
-          {
-              printf("%d%d, ", a,b);
-          }
+	  if(a!=b)
+	  {
+	  	 if ( a == 8 && b == 9 )
+                {
+                	 printf("%d%d", a,b);
+                }
+                else
+                {
+               		 printf("%d%d, ", a,b);
+                }
+	  }
           else
           {
           }

@@ -19,6 +19,6 @@ for(i = 0; i < 49; i++)
 {
 	printf("%d, ", fib[i]);
 }
-prinf("%d\n", fib[49]);
+printf("%d\n", fib[49]);
 return (0);
 }

@@ -7,25 +7,18 @@
  */
 int main(void)
 {
-	int i;
-	unsigned long int j, k, next, sum;
-
-	j = 1;
-	k = 2;
-	sum = 0;
-
-	for (i = 1; i <= 33; ++i)
-	{
-		if (j < 4000000 && (j % 2) == 0)
-		{
-			sum = sum + j;
-		}
-		next = j + k;
-		j = k;
-		k = next;
-	}
-
-	printf("%lu\n", sum);
-
-	return (0);
+int fib[50];
+int i;
+fib[0] = 1;
+fib[1] = 2;
+for(i = 2; i < 50; i++)
+{
+	fib[i] = fib[i-1] + fib[i-2];
+}
+for(i = 0; i < 49; i++)
+{
+	printf("%d, ", fib[i]);
+}
+prinf("%d\n", fib[49]);
+return (0);
 }
